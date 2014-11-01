@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Oqi-fv-bSo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="yT7-ep-9Sf">
+            <objects>
+                <viewController id="Oqi-fv-bSo" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wuu-QF-IcD"/>
+                        <viewControllerLayoutGuide type="bottom" id="tWU-yH-o0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bXv-GY-RUD">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9g-VC-xoQ">
+                                <rect key="frame" x="440" y="203" width="46" height="30"/>
+                                <state key="normal" title="start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="modal" id="Vyd-RY-zzL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egn-ld-QOU">
+                                <rect key="frame" x="440" y="248" width="49" height="30"/>
+                                <state key="normal" title="explain">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vbT-eG-X4z" kind="modal" id="hpd-Ce-0u2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R9g-VC-xoQ" secondAttribute="trailing" constant="82" id="Oy7-af-687"/>
+                            <constraint firstItem="egn-ld-QOU" firstAttribute="leading" secondItem="R9g-VC-xoQ" secondAttribute="leading" id="cqt-Tf-OJH"/>
+                            <constraint firstItem="tWU-yH-o0K" firstAttribute="top" secondItem="egn-ld-QOU" secondAttribute="bottom" constant="42" id="k6t-Tm-gKS"/>
+                            <constraint firstItem="egn-ld-QOU" firstAttribute="top" secondItem="R9g-VC-xoQ" secondAttribute="bottom" constant="15" id="mcE-U1-fhW"/>
+                            <constraint firstAttribute="trailing" secondItem="egn-ld-QOU" secondAttribute="trailing" constant="79" id="nuq-Vb-kkv"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9C-uu-7Y0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="-73"/>
+        </scene>
+        <!--Ninja Ori2 View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="ninjaOri2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TvN-0d-DFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="aVg-JY-jeM"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="417"/>
+        </scene>
+        <!--Explain View Controller-->
+        <scene sceneID="vDd-iO-nlg">
+            <objects>
+                <viewController id="vbT-eG-X4z" customClass="ExplainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bI7-P7-UiS"/>
+                        <viewControllerLayoutGuide type="bottom" id="i2p-QA-LQJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IPd-IB-NYk">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58z-Yc-NEq">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="x7M-DU-R4G">
+                                        <rect key="frame" x="265" y="263" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="x7M-DU-R4G" secondAttribute="bottom" constant="20" symbolic="YES" id="CQp-OK-pxn"/>
+                                    <constraint firstItem="x7M-DU-R4G" firstAttribute="top" secondItem="58z-Yc-NEq" secondAttribute="top" constant="263" id="GBe-vn-Alc"/>
+                                    <constraint firstItem="x7M-DU-R4G" firstAttribute="centerX" secondItem="58z-Yc-NEq" secondAttribute="centerX" id="Kxi-J5-V9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="x7M-DU-R4G" secondAttribute="trailing" constant="264" id="NLV-nf-VMo"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lag-mf-fua">
+                                <rect key="frame" x="509" y="270" width="39" height="30"/>
+                                <state key="normal" title="home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5vB-le-qPE" kind="unwind" unwindAction="returned:" id="p8l-L7-Txd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lag-mf-fua" secondAttribute="trailing" constant="20" symbolic="YES" id="557-LD-6QZ"/>
+                            <constraint firstItem="58z-Yc-NEq" firstAttribute="top" secondItem="IPd-IB-NYk" secondAttribute="top" id="A9q-tD-Fm7"/>
+                            <constraint firstItem="58z-Yc-NEq" firstAttribute="leading" secondItem="IPd-IB-NYk" secondAttribute="leading" id="DIT-la-Eq4"/>
+                            <constraint firstAttribute="bottom" secondItem="lag-mf-fua" secondAttribute="bottom" constant="20" symbolic="YES" id="WKo-8O-XUp"/>
+                            <constraint firstAttribute="bottom" secondItem="58z-Yc-NEq" secondAttribute="bottom" id="hM2-mi-3EQ"/>
+                            <constraint firstAttribute="trailing" secondItem="58z-Yc-NEq" secondAttribute="trailing" id="urr-Ud-7Su"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="pageControl" destination="x7M-DU-R4G" id="F4C-4y-9HN"/>
+                        <outlet property="scrollView" destination="58z-Yc-NEq" id="Q2y-UC-Maa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xA-NA-vVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5vB-le-qPE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="-41"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
